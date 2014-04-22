@@ -8,6 +8,9 @@ Meteor.startup(function() {
 Deps.autorun(function () {
   Meteor.subscribe('users');
   Meteor.subscribe('onlines');
+  Meteor.subscribe('roomMessages', Session.get("room"));
+  Meteor.subscribe('allRooms');
+  Meteor.subscribe('roomUsers', Session.get("room"));
 });
 
 Meteor.setInterval(function() {

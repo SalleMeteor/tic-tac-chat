@@ -1,0 +1,53 @@
+<template name="room">
+  {{#if isPlaying}}
+    <div class="container">
+
+        <div class="row">
+
+            <div class="messages-container">
+
+                <div class="messages">
+
+                    {{#if messages}}
+                        {{#each messages}}
+                            <p>
+                                <span class="username">{{user}}:</span>
+                                {{content}}
+                                
+                            </p>
+
+                        {{/each}}
+
+                    {{/if}}
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="add-message">
+
+                <p class="pull-left">Logged in as: <b>{{username}}</b></p>
+
+                <div class="form-group">
+
+                    <textarea class="form-control message" placeholder="Write a message"></textarea>
+
+                </div>
+
+                <div class="form-group clearfix">
+
+                    <input type="submit" class="btn btn-primary pull-right send-message" style="margin-left: 10px;" value="Send message" />
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+  {{/if}}
+</template>
