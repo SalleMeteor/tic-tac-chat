@@ -1,0 +1,21 @@
+<template name="game">
+  {{#if isPlaying}}
+    <div class="gameboard">
+      <div class="row" data-row='1'>
+      	<div class="col" data-col='1' data-voice-shoot='1'></div>
+      	<div class="col" data-col='2' data-voice-shoot='2'></div>
+      	<div class="col" data-col='3' data-voice-shoot='3'></div>
+      </div>
+      <div class="row" data-row='2'>
+      	<div class="col" data-col='1' data-voice-shoot='4'></div>
+      	<div class="col" data-col='2' data-voice-shoot='5'></div>
+      	<div class="col" data-col='3' data-voice-shoot='6'></div>
+      </div>
+      <div class="row" data-row='3'>
+      	<div class="col" data-col='1' data-voice-shoot='7'></div>
+      	<div class="col" data-col='2' data-voice-shoot='8'></div>
+      	<div class="col" data-col='3' data-voice-shoot='9'></div>
+      </div>
+    </div>
+  {{/if}}
+</template>
